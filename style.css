@@ -1,0 +1,284 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    max-width: 450px;
+    min-height: 100vh;
+    margin: 0px auto;
+    padding-bottom: 130px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 32px 0;
+    text-align: center;
+}
+.logo {
+    font-size: 25px;
+}
+i {
+    margin-right: 5px;
+}
+sup {
+    position: relative;
+    font-size: 35%;
+    line-height: 0;
+    vertical-align: baseline;
+    top: -0.8em;
+    left: -0.4rem;
+}
+h2 {
+    margin: 0px;
+    margin-top: 40px;
+}
+/* .sign-with {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 15px;
+} */
+.sign-with a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.with-fb {
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 18px;
+}
+.fb {
+    width: 80%;
+    background-color: #3b5998;
+    border-radius: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px 24px;
+}
+.with-google {
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 18px;
+}
+.google {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px 24px;
+    color: white;
+    border: 0.5px solid black;
+}
+.google a {
+    color: black;
+}
+/* Hover effect */
+.with-fb:hover {
+    transform: scale(1.045);
+}
+.fb:hover {
+    background-color: #2f477d;
+}
+.with-google:hover {
+    transform: scale(1.045);
+}
+.formdivider {
+    display: table;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin: 0px auto 1em;
+    color: rgb(127, 127, 127);
+    position: relative;
+    text-align: center;
+    width: 85%;
+}
+.formdivider::before {
+    border-top: 1px solid grey;
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.8em;
+    width: 42%;
+}
+.formdivider::after {
+    border-top: 1px solid grey;
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.8em;
+    width: 42%;
+}
+            /* form  */
+
+input {
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 8px 14px;
+    inline-size: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-inline: 14px;
+    transition: box-shadow 0.1s ease-in-out 0s;
+}
+input:hover {
+    border: 1px solid black;
+    box-shadow: 0px 0px 1.5px black;
+}
+/* email */
+.sections {
+    padding-bottom: 24px;
+}
+.label {
+    padding-bottom: 8px;
+    display: flex;
+}
+.phone-num a{
+    font-size: 14px;
+    color: #117a37;
+    padding-top: 8px;
+}
+/* password */
+.email-pass-name span{
+    font-size: 14px;
+}
+/* birth date */
+.ddmmyy-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+.ddmmyy-inputs input {
+    width: 60%;
+}
+/* gender */
+.gen-opt{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+}
+/* .gen-opt input {
+    height: 13px;
+    width: 13px;
+} */
+.opts {
+    display: flex;
+    height: 2rem;
+}
+.check {
+    display: none;
+}
+label {
+    display: flex;
+    position: relative;
+}
+.checkbox {
+    inline-size: 16px;
+    block-size: 16px;
+    position: relative;
+}
+.checkbox::before {
+    content: "";
+    border: 1px solid rgba(128, 128, 128, 0.701);
+    display: block;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    align-self: flex-start;
+}
+.label-name {
+    padding: 0px 24px 0px 12px;
+}
+.check:checked + label .checkbox {
+    background-color: green;
+    border-radius: 50%;
+}
+.check:checked + label .checkbox::before {
+    content: "";
+    block-size: 0.5em;
+    inline-size: 0.5em;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sq-checkbox{
+    display: inline-block;
+    inline-size: 16px;
+    block-size: 16px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    position: relative;
+}
+.sq-checkbox::before {
+    content: "";
+    display: block;
+    block-size: 4px;
+    inline-size: 8px;
+    background-color: #117a37;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-48deg);
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    opacity: 0;
+}
+.check:checked + label .sq-checkbox{
+    background-color: #117a37;
+}
+.check:checked + label .sq-checkbox::before{
+    opacity: 1;
+}
+.confirmation label {
+    flex: 0 0 auto;
+}
+p {
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+}
+p a {
+    color: rgb(29, 185, 84);
+}
+.signup-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+button {
+    height: 56px;
+    width: 150px;
+    background-color: #1ed760;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    transition: all 0s ease-in 0s;
+}
+.account {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+button:hover {
+    transform: scale(1.05);
+    background-color: #30ec71;
+}
